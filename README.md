@@ -1,6 +1,5 @@
 # Bella_Doce
- Projeto Integrador: criação de site de perfumaria em grupo
- 
+ Projeto Integrador em grupo: criação de site de perfumaria
  Usando: 
  HTML
  CSS
