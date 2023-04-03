@@ -1,6 +1,6 @@
 # Bella_Doce
  Projeto Integrador em grupo: criação de site de perfumaria
  Usando: 
- HTML
- CSS
- Bootstrap
+ HTML,
+ CSS,
+ e Bootstrap
