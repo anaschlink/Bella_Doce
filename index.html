@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+    <title>Página Inicial</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+  
+  <div id="contato" class="row">
+      <img src="imagens/logo.png" class="col-3" id="logo" alt="">
+      <div class="col-9 d-flex align-items-end justify-content-end">
+        <a  id="atendimento" href="contact.html">
+          <span class="text-dark">Canais de Atendimento</span>
+          <img src="imagens/telefone.png" alt="imagem telefone-atendimento">
+        </a>
+      </div>
+  </div>
+
+  <nav class="navbar col-xl-10 offset-xl-1 navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Principal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="lista_de_desejos.html">Lista de Desejos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrinho.html">Carrinho</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="feminino.html">Feminino</a></li>
+                <li><a class="dropdown-item" href="masculino.html">Masculino</a></li>
+                <li><a class="dropdown-item" href="marcas.html">Marcas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Busca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner align-items-center">
+                <div class="carousel-item active homepage">
+                  <img src="imagens/1.png" class="d-block w-100" alt="imagem 1">
+                </div>
+                <div class="carousel-item homepage">
+                  <img src="imagens/2.png" class="d-block w-100" alt="imagem 2">
+                </div>
+                <div class="carousel-item homepage">
+                  <img src="imagens/3.png" class="d-block w-100" alt="imagem 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev align-content-between" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+        </div>
+      </div>
+      
+      <section>
+        <div class="container">
+          <div class="row d-flex justify-content-evenly justify-content-md-center">
+            <h2 class="text-center my-4">Recomendações</h2>
+          </div>
+          <div class="container my-4">
+            
+            <div class="row justify-content-evenly">
+              <div class="col-md-3">
+                <div class="card sim border-0">
+                  <img src="imagens/lancome.png" class="card-img-top" alt="perfume recomendacao">
+                  <div class="card-body text-center ">
+                    <h5 class="card-title">Lancôme</h5>
+                    <p class="card-text">Perfume Feminino</p>
+                    <h6 class="car-text"><strong>R$489,00</strong></h6> 
+                    <button href="product.html" type="button" title="comprar" class="btn btn col-12" id="Add-carrinho">
+                      <a class="link" href="product.html"><h6>Comprar <i class="bi bi-cart-fill"></i> </h6></a>
+                    </button>
+                    <button href="lista_de_desejos.html" type="button" title="Adicionar lista" class="btn btn col-12 my-2 link" id="Add-lista">
+                      <a class="link" href="lista_de_desejos.html"><h6>Adicionar <i class="bi bi-heart-fill"></i> </h6></a>
+                    </button>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-md-3 col-12">
+                <div class="card sim border-0 m-0">
+                  <img src="imagens/jimmy.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body text-center ">
+                    <h5 class="card-title">Jimmy Choo</h5>
+                    <p class="card-text">Perfume Feminino </p>
+                    <h6 class="car-text"><strong>R$500,00</strong></h6>
+                    <button href="product.html" type="button" title="comprar" class="btn btn col-12" id="Add-carrinho">
+                      <a class="link" href="product.html"><h6>Comprar <i class="bi bi-cart-fill"></i> </h6></a>
+                    </button>
+                    <button href="lista_de_desejos.html" type="button" title="Adicionar lista" class="btn btn col-12 my-2 link" id="Add-lista">
+                      <a class="link" href="lista_de_desejos.html"><h6>Adicionar <i class="bi bi-heart-fill"></i> </h6></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+            <div class="card sim border-0">
+              <img src="imagens/saintLaurent.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center ">
+                <h5 class="card-title">Yves Saint Laurent</h5>
+                <p class="card-text">Perfume Feminino</p>
+                <h6 class="car-text"><strong>R$ 322,15</strong></h6>
+                <button href="product.html" type="button" title="comprar" class="btn btn col-12" id="Add-carrinho">
+                  <a class="link" href="product.html"><h6>Comprar <i class="bi bi-cart-fill"></i> </h6></a>
+                </button>
+                <button href="lista_de_desejos.html" type="button" title="Adicionar lista" class="btn btn col-12 my-2 link" id="Add-lista">
+                  <a class="link" href="lista_de_desejos.html"><h6>Adicionar <i class="bi bi-heart-fill"></i> </h6></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card sim border-0">
+              <img src="imagens/Dior.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center ">
+                <h5 class="card-title">Dior</h5>
+                <p class="card-text">Perfume Feminino</p>
+                <h6 class="car-text"><strong>R$ 364,65</strong></h6>
+                <button href="product.html" type="button" title="comprar" class="btn btn col-12" id="Add-carrinho">
+                  <a class="link" href="product.html"><h6>Comprar <i class="bi bi-cart-fill"></i> </h6></a>
+                </button>
+                <button href="lista_de_desejos.html" type="button" title="Adicionar lista" class="btn btn col-12 my-2 link" id="Add-lista">
+                  <a class="link" href="lista_de_desejos.html"><h6>Adicionar <i class="bi bi-heart-fill"></i> </h6></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row justify-content-start my-5">
+        <div class="col-md-12">
+          <h3>Sobre</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nemo rem nam harum dolore in et unde architecto odio ab, dolores necessitatibus recusandae enim doloribus, modi saepe nostrum quisquam. Assumenda deleniti nemo eius cum, neque quae itaque cupiditate dignissimos quisquam quod et ipsum possimus corporis facere fugiat quidem perspiciatis aut nihil voluptatibus! Aut dicta aspernatur eligendi iure tempore ullam at incidunt dolorem est illo a accusamus, tempora, earum quam saepe. Sequi suscipit tempore odio sapiente non a voluptate eligendi, ipsa minus quis. Assumenda suscipit quam ullam? Iste corrupti molestias, fugiat dicta facere ab velit optio temporibus delectus culpa blanditiis eaque.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <div class="container">
+        <div class="row my-6">
+          
+          <p class="col-lg-4  text-muted">© 2022 Company, Inc</p>
+
+          <ul class="nav col-lg-6 justify-content-center align-items-center px-lg-5">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Página Inicial</a></li>
+              <li class="nav-item"><a href="feminino.html" class="nav-link px-2 text-muted">Feminino</a></li>
+              <li class="nav-item"><a href="masculino.html" class="nav-link px-2 text-muted">Masculino</a></li>
+              <li class="nav-item"><a href="marcas.html" class="nav-link px-2 text-muted">Marcas</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link 
+              px-2 text-muted">Sobre</a></li>
+            </li>
+            <li class="nav-item">Redes Sociais
+              <button type = "button" class= "btn btn-floating "><a href="contact.html"><i class="bi bi-whatsapp text-dark"></i></a></button>
+              <button type="button" class="btn btn-floating"><a href="contact.html"><i class="bi bi-instagram text-dark"></i></a></button>  
+            </li>
+          </ul>
+        </div>  
+      </div>     
+      
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

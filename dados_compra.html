@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereço e pagamento</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+  
+  <div id="contato" class="row">
+    <img src="imagens/logo.png" class="col-3" id="logo" alt="">
+    <div class="col-9 d-flex align-items-end justify-content-end">
+      <a  id="atendimento" href="contact.html">
+        <span class="text-dark">Canais de Atendimento</span>
+        <img src="imagens/telefone.png" alt="">
+      </a>
+    </div>
+</div>
+
+<nav class="navbar col-xl-10 offset-xl-1 navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Principal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="lista_de_desejos.html">Lista de Desejos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrinho.html">Carrinho</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="feminino.html">Feminino</a></li>
+              <li><a class="dropdown-item" href="masculino.html">Masculino</a></li>
+              <li><a class="dropdown-item" href="marcas.html">Marcas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Busca</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5" id="check-processos">
+          <div><img src="imagens/check.svg" alt="Aprovado"><p>Pedido</p></div>
+          <div><img src="imagens/circle.svg" alt="Em processo"><p>Endereço e pagamento</p></div>
+          <div><img src="imagens/circle.svg" alt="Em processo"><p>Confirmação</p></div>
+    </div>
+        <div class="container-fluid row mt-5">
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 " id="caixa-dados">
+            <div class="p-2" id="processo-endereco">
+            <p class="confirmacao"><strong>1.Endereço</strong></p>
+            <p class="confirmacao"><strong>Endereço principal</strong></p>
+            <p class="confirmacao"><strong>Carolina Ferreira</strong></p>
+            <p class="confirmacao">Rua pantojo, 1787</p>
+            <p class="confirmacao">095550-350, São Paulo-SP</p>
+            <p class="confirmacao">(11) 99999-9999</p>
+            <p class="confirmacao">carolferreira@gmail.com</p>
+            <button>Inserir novo endereço</button>
+            <div class="linha-divisoria mt-2"></div>
+            <p class="confirmacao"><strong>Endereço de entrega</strong></p>
+            <form>
+              <input type="checkbox" id="endereco-principal" for="confirma-endereco">
+              <label id="confirma-endereco">Endereço de entrega igual ao principal</label>
+            </form>
+            </div>
+            
+          </div>
+          
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4" id="caixa-dados">
+            <div>
+              <div class="p-2" id="processo-entrega">
+                <p class="confirmacao"><strong>2.Opções de Entrega</strong></p>
+                <form action="#">
+                  <input type="checkbox" id="entrega-padrao">
+                  <label for="entrega-padrao"><strong>Entrega padrão</strong></label>
+                  <p>3-5 dias úteis após a confirmação de pagamento</p>
+                  <input type="checkbox" id="entrega-retirada">
+                  <label for="entrega-retirada"><strong>Retirada</strong></label>
+                </form>
+
+              </div>
+              
+              <div class="p-2" id="processo-pagamento">
+                <p><strong>3.Formas de pagamento</strong></p>
+                <form>
+                  <label for="pagamento-credito"><input type="radio" name="pagamento" value="credito" id="teste">Cartão de crédito</label>
+                  <label for="pagamento-debito"><input type="radio" name="pagamento" value="debito"id="pagamento-debito">Cartão de débito</label>
+                  <input type="number" class="dadosCartao" id="numero-cartao" placeholder="Número do Cartão*">
+                  <input type="text" class="dadosCartao" id="titular-cartao" placeholder="Nome do Titular*">
+                  <input type="number" class="dadosCartao" id="validade-cartao" placeholder="MM/AA">
+                  <input type="number" class="dadosCartao" id="cvv-cartao" placeholder="CVV">
+                  <label for="pagamento-boleto"><input type="radio" name="pagamento" value="boleto" id="pagamento-boleto">Boleto Bancário</label>
+                </form>
+              </div>
+            </div>  
+          </div>
+          
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4" id="caixa-dados">
+            <div class="p-2" id="processo-resumo">
+              <p class="confirmacao"><strong>4.Resumo da Compra</strong></p>
+            <div class="product-info">
+              <img src="imagens/loewe2.png" alt="Foto do produto" id="imagem-produto">
+              <div class="product-text">
+                <p class="confirmacao">Loewe</p>
+                <p class="confirmacao">Perfume Feminino</p>
+                <p class="confirmacao">Vendido e entregue por Belle Doce</p>
+                <p class="confirmacao">R$ 589,00</p>
+              </div>   
+            </div>
+            <div class="linha-divisoria"></div>
+            <p><strong>Cupons de desconto</strong></p>
+            <input type="text" placeholder="Inserir Cupom*">   
+            <button class="botao-cupom">Aplicar</button>
+            <div class="linha-divisoria" ></div>
+            <div class="subtotal-area">
+              <p class="confirmacao">Subtotal</p>
+              <p class="confirmacao">R$ 589,00</p>
+            </div>
+            <div class="frete-area">
+              <p class="confirmacao">Frete</p>
+              <p class="confirmacao">Grátis</p>
+            </div>
+            <div class="valor-area">
+              <p class="confirmacao">Total</p>
+              <p class="confirmacao">R$ 589,00</p>
+            </div>
+            <div class="botao-area">
+              <a href="confirmacao_compra.html"><button class="botao-finalizar">Finalizar Compra</button></a>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+        <footer class="mt-2">
+          <div class="container">
+              <div class="row my-6">
+                
+                <p class="col-lg-4  text-muted">© 2022 Company, Inc</p>
+      
+                <ul class="nav col-lg-6 justify-content-center align-items-center px-lg-5">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Página Inicial</a></li>
+                    <li class="nav-item"><a href="feminino.html" class="nav-link px-2 text-muted">Feminino</a></li>
+                    <li class="nav-item"><a href="masculino.html" class="nav-link px-2 text-muted">Masculino</a></li>
+                    <li class="nav-item"><a href="marcas.html" class="nav-link px-2 text-muted">Marcas</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link 
+                    px-2 text-muted">Sobre</a></li>
+                  </li>
+                  <li class="nav-item">Redes Sociais
+                    <button type = "button" class= "btn btn-floating "><a href="contact.html"><i class="bi bi-whatsapp text-dark"></i></a></button>
+                    <button type="button" class="btn btn-floating"><a href="contact.html"><i class="bi bi-instagram text-dark"></i></a></button>  
+                  </li>
+                </ul>
+              </div>  
+            </div>     
+            
+      </footer>
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+<script src="script.js"></script>
+</html>

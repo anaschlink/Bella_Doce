@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0%, 5%;
+
+}
+
+#cabecalho {
+    align-items: center;
+
+}
+
+#recomendacoes {
+    background-color: #d1b395;
+    border-radius: 20px;
+}
+
+#contato {
+    background-color:#d1b395;
+    padding: 10px;
+    text-align: end;
+    font-size: larger;
+}
+#atendimento{
+    text-decoration: none;
+}
+#busca {
+    height: 30px;
+    width: 100%;
+}
+
+#item {
+    text-align: center;
+}
+
+#nav {
+    background-color: #d1b395;
+}
+.navbar{
+    background-color: rgba(157, 96, 5, 0.295);
+}
+#botao {
+    background-color: #d1b395;
+    border: none;
+}
+
+#destaque, #seta {
+    text-align: center;
+    align-items: center;
+}
+
+#titulo {
+    text-align: center;
+    background-color: #d1b395;
+    border: black solid 1px;
+}
+.homepage{
+    height: 400px;
+}
+article {
+    display: inline-block;
+    text-align: center;
+}
+
+#anuncio {
+    align-content: center;
+}
+
+.rodape {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#wishlist {
+    text-align: center;
+}
+
+#desejo {
+    background-color: aliceblue;
+    display: inline-block;
+}
+
+#login_top {
+    text-align: center;
+    font-size: large;
+}
+
+#form {   
+    border: 0px
+}
+
+#input {
+        
+        width: 400px;   
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;   
+        border: 2px solid gr;   
+        box-sizing: border-box; 
+
+}
+
+#botao_login {
+    background-color: rgb(236, 135, 33, .10);   
+    width: 100%;  
+     color: black;   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;   
+}
+
+#login_sm {
+    text-align: center;
+}
+#cadastrado {
+    text-align: center;
+    margin-top: 10px;
+    background: rgba(236, 135, 33, 0.1);
+    border-radius: 5px;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+#cadastrado_nota {
+
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#cadastro_top {
+    font-size: 30px;
+}
+#botao_cadastro {
+    background-color: rgb(236, 135, 33, .10);   
+    width: 100%;  
+     color: black;   
+     padding: 10px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer; 
+     text-align: center;
+     text-decoration: none;
+}
+
+
+#cadastrar_data {
+    width: 130px;  
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 5px;   
+    border: 2px solid gr;   
+    box-sizing: border-box; 
+}
+#nome_cadastro {
+    font-size: 20px;
+    line-height: 36px;
+}
+#botao_cadastre_se {
+    background-color: rgb(236, 135, 33, .10);   
+    width: 30%;  
+     color: black;   
+     padding: 10px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer; 
+     font-size: 30px;
+     text-align: center;
+     text-decoration: none;
+}
+#texto_cadastro {
+    font-size: 10px;
+    text-align: center;
+    
+}
+#cliente {
+    font-size: 25px;
+    text-align: center;
+}
+#compra{
+    background: #EEAE6E;
+}
+#lista-desejo{
+    background: rgba(236, 135, 33, 0.1);
+}
+#Add-carrinho{
+    background: #EEAE6E;
+}
+#Add-lista{
+    background:rgba(236, 134, 33, 0.43);
+}
+.rating input
+{
+    display: none;
+
+}
+.rating label{
+    display: block;
+    cursor:pointer;
+    width: 50px;
+    background:#ccc;
+}
+.canais-contato{
+position: relative;
+}
+#descricao{
+   justify-content: start; 
+}
+footer{
+    background-color:whitesmoke;
+}
+
+.sim{
+    border: none;
+}
+.social{
+    width: 75px;
+    height: 75px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    text-decoration: none;
+    color: black;
+}
+.marcas{
+    border: none;
+    font-size: 25px;
+    background-color: #f0d9c263;
+}
+.marcas:hover {
+    background-color: #d1b395;
+    color: black;
+}
+div#linha-contato{
+    display: flex;
+    justify-content: end;
+    padding: 12px 0;
+    height: 50px;
+    background-color: #d1b395;
+}
+
+div#linha-contato a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+div#linha-contato a img{
+    height: 35px;
+    width: 35px;
+}
+
+div#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0 25px 0;
+}
+
+div#menu img{
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.search-area{
+    display: flex;
+    align-items: center;
+}
+
+div#menu input#search-bar{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid rgb(173, 173, 173);
+    outline: none;
+    padding: 0 12px;
+}
+
+div#menu button#btn-pesquisar{
+    height: 40px;
+    width: 70px;
+    border-radius:  0 10px 10px 0;
+    border: none;
+    background-color: #d1b395;
+}
+
+div#menu button#btn-pesquisar img{
+    height: 25px; 
+    width: 25px;
+}
+
+div#menu button#minha-conta{ 
+    height: 40px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+div#menu button#minha-conta img{
+    height: 25px;
+    width: 25px;
+}
+
+div#menu button#lista-favoritos{
+    margin: 0 5px;
+    border: none;
+    background-color: #fff;
+}
+
+div#menu button#lista-favoritos img{
+    height: 40px;
+    width: 40px;
+}
+
+div#menu button#lista-carrinho{
+    margin: 0 5px;
+    border: none;
+    background-color: #fff;
+}
+
+div#menu button#lista-carrinho img{
+    height: 40px;
+    width: 40px;
+}
+
+div#check-processos{
+    display: flex;
+    padding-top: 15px;
+    background-color: #d1b395;
+    justify-content: space-around;
+}
+
+div#check-processos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#check-processos div img{
+    height: 25px;
+    width: 25px;
+}
+
+div#processo-endereco{
+    padding: 10px;
+    height: 550px;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+div#processo-endereco p{
+    margin: 5px 0 0 20px;
+}
+
+.linha-divisoria{
+    height: 2px;
+    width: 300px;
+    background-color: rgb(125, 125, 125);
+    border-radius: 10px;
+    margin: auto;
+}
+
+div#processo-endereco button{
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #d1b395;
+    color: #d1b395;
+    font-weight: 500;
+    margin: 10px 0 20px 10px;
+    padding: 4px 10px;
+}
+
+div#processo-endereco input{
+    margin: 10px 20px;
+}
+
+div#processo-entrega{
+    height: 250px;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+div#processo-pagamento{
+    border: 1px solid #000;
+    background-color: white;
+    height: 405px;
+}
+
+.texto-boleto{
+    font-size: 15px;
+}
+
+div#processo-pagamento label{
+    display: block;
+}
+
+div#processo-pagamento input#numero-cartao{
+    display: block;
+    margin: 10px 10px;
+}
+
+div#processo-pagamento input#titular-cartao{
+    display: block;
+    margin: 10px 10px;
+}
+
+div#processo-pagamento input#validade-cartao{
+    width: 80px;
+    margin: 10px 10px;
+}
+
+div#processo-pagamento input#cvv-cartao{
+    width: 50px;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+div#processo-resumo{
+    border: 1px solid #000;
+    background-color: white;
+    height: 550px;
+}
+
+.product-info{
+    display: flex;
+}
+
+.product-info p{
+    margin: 0;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+div#processo-resumo img{
+    height: 120px;
+    width: 100px;
+    border: 1px solid #000;
+}
+
+div#processo-resumo .linha-divisoria{
+    margin: 25px 0 25px 0;
+}
+
+.botao-cupom{
+    border: 1px solid #d1b395;
+    color: #d1b395;
+    background-color: #fff;
+    padding: 2px 12px;
+}
+
+.subtotal-area, .frete-area, .valor-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botao-area{
+    text-align: center;
+}
+
+.botao-finalizar{
+    background-color: #d1b395;
+    padding: 5px 15px;
+    border: none;
+    margin-bottom: 25px;
+}
+
+/* esse é a confirmação */
+
+#parabens{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+div#formas1{
+    padding: 10px;
+    height: 520px;
+    border: 1px solid #000;
+    background-color: rgba(231, 219, 202, 0.705);
+    
+}
+
+div#formas2{
+    padding: 10px;
+    height: auto;
+    border: 1px solid #000;
+    background-color: rgba(231, 219, 202, 0.705);
+    
+}
+
+article > h3{
+    background-color:  #d1b395;
+    color: white;
+    line-height: 3;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 20px;
+}
+
+article#pagamento > h3{
+    margin: -10px;
+    padding-bottom: 10px;
+}
+
+article#pedido > h3{
+    margin: -10px;
+    padding-bottom: 10px;
+}
+
+div#processo-resumo2{
+    border: 1px solid #000;
+    background-color: white;
+    height: auto;
+}
+
+button.acompanhar{
+    margin: auto;
+    background-color: #d1b395;
+    color: #000;
+    border-color: #d1b395;
+    
+}
+
+#caixas-info{
+    padding-top: 10px;
+    
+}
+
+div#descricao{
+    padding-top: 20px;
+}
+
+article#descricao{
+    text-align: left ;
+}
+
+footer.valor-area{
+    background-color: #d1b395;
+}
+
+div.product-info2{
+    background-color: rgba(231, 219, 202, 0.705);
+    display: flex;
+    font-size: 15px;
+    
+}
+
+.product-info2 p{
+    display: flex;
+    margin: 0;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.subtotal-area2, .frete-area2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(231, 219, 202, 0.705);
+}
+
+.confirmacao{
+    font-size: 22px;
+}
+
+#caixa-dados{
+    position: relative;
+}
+
+#informacoes-produto {
+    background-color: #f8e7d4;
+}
+
